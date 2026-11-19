@@ -10,6 +10,7 @@ public class SceneZone : MonoBehaviour
 
     private void Start()
     { GetComponent<MeshRenderer>().enabled = false; }
+  
     private void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;
@@ -23,6 +24,7 @@ public class SceneZone : MonoBehaviour
         playerNear = false;
         prompt.SetActive(false);
     }
+  
     private void Update()
     {
         if (playerNear && Keyboard.current.eKey.wasPressedThisFrame)
