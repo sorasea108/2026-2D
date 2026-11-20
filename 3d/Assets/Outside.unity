@@ -3428,7 +3428,7 @@ GameObject:
   - component: {fileID: 973735205}
   - component: {fileID: 973735204}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3520,7 +3520,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973735203}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.0089998245, y: 0.64, z: -0.61000013}
   m_LocalScale: {x: 0.073487595, y: 2.3464391, z: 1.3503668}
   m_ConstrainProportionsScale: 0
@@ -5349,7 +5349,7 @@ GameObject:
   - component: {fileID: 1638160388}
   - component: {fileID: 1638160387}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: enter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5369,6 +5369,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneZone
   prompt: {fileID: 1535711537}
   sceneName: 20261014
+  door: {fileID: 1432112852}
+  openAngle: -90
+  openSound: {fileID: 0}
 --- !u!65 &1638160388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5397,7 +5400,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638160386}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7169,7 +7172,7 @@ SceneRoots:
   - {fileID: 2132348624}
   - {fileID: 656761591}
   - {fileID: 376702715}
-  - {fileID: 1638160391}
   - {fileID: 367262459}
   - {fileID: 504344332}
+  - {fileID: 1638160391}
   - {fileID: 1432112852}
